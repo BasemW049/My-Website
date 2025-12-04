@@ -241,6 +241,7 @@ img {
     animation: spinAndColor 2s ease-in-out;
 }
 #skills {
+    min-height: 400px;
     padding: 40px 20px;
     text-align: center;
     background-image: url('https://raw.githubusercontent.com/BasemW049/My-Website/refs/heads/main/images/Code.jpg'), url('https://raw.githubusercontent.com/BasemW049/My-Website/refs/heads/main/images/Network.jpg');
