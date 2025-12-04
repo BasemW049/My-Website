@@ -241,7 +241,7 @@ img {
     animation: spinAndColor 2s ease-in-out;
 }
 #skills {
-    min-height: 400px;
+    min-height: 700px;
     padding: 40px 20px;
     text-align: center;
     background-image: url('images/Code.jpg'), url('images/Network.jpg');
