@@ -13,7 +13,7 @@
 <header>
     <h1 id="logo-title">Basem</h1>
 
-    <!--NAV Menu-->
+<!--NAV Menu-->
     <nav>
         <ul>
             <li><a href="#hero">Home</a></li>
@@ -25,24 +25,25 @@
     </nav>
 </header>
 
+<!--Main-->
 <main>
 
-<!--Hero Section-->
-<section id="hero">
-    <h2>Welcome to My Portfolio</h2>
-    <img src="images/Heroo.PNG" alt="Hero Image" class="hero-img">
-    <p>Call to Action:</p>
-    <button onclick="window.location.href='#contact'">Contact Me</button>
-</section>
+<!--Hero section-->
+    <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <img src="images/Heroo.PNG" alt="Hero Image">
+        <p>Call to Action:</p>
+        <button onclick="window.location.href='#contact'">Contact Me</button>
+    </section>
 
 <!--Mission/Vision-->
-<section id="mission">
-    <h2>Mission & Vision</h2>
-    <p>“Learning more about the digital field and trying to become an expert”</p>
-    <p><a href="#">Read more about my mission</a></p>
-</section>
+    <section id="mission">
+        <h2>Mission &amp; Vision</h2>
+        <p>“Learning more about the digital field and trying to become an expert”</p>
+        <p><a href="#">Read more about my mission</a></p>
+    </section>
 
-<!--Skills Section-->
+<!--Skills-->
 <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
@@ -55,28 +56,30 @@
     </div>
 </section>
 
-<!--Contact Section-->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:W0492673@campus.nscc.ca">W0492673@campus.nscc.ca</a><br>
-    LinkedIn: <a href="#">LinkedIn Profile</a></p>
-</section>
+<!--Contact-->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:W0492673@campus.nscc.ca">W0492673@campus.nscc.ca</a><br>
+        LinkedIn: <a href="#">LinkedIn Profile</a></p>
+    </section>
 
-<!--Resume Section-->
-<section id="resume">
-    <h2>Resume / CV</h2>
-    <p><a href="#">Download Resume (dummy link)</a></p>
-    <p><a href="#"><img src="images/Resume.jpg" alt="Resume Thumbnail"></a></p>
-</section>
+<!--Resume-->
+    <section id="resume">
+        <h2>Resume / CV</h2>
+        <p><a href="#">Download Resume (dummy link)</a></p>
+        <p><a href="#"><img src="images/Resume.jpg" alt="Resume Thumbnail"></a></p>
+    </section>
 
 </main>
 
+<!--Footer-->
 <footer>
     <p>&copy; 2025 Basem Alsharmani.</p>
 </footer>
 
+</body>
 <script>
-    // Logo animation
+    //animation trigger
     const logo = document.getElementById('logo-title');
     logo.addEventListener('click', () => {
         logo.classList.add('spin-animation');
@@ -85,6 +88,4 @@
         }, 2000);
     });
 </script>
-
-</body>
 </html>
