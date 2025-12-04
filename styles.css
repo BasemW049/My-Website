@@ -243,7 +243,7 @@ img {
 #skills {
     padding: 40px 20px;
     text-align: center;
-    background-image: url('Images/Codee.jpg'), url('Images/Network.jpg');
+    background-image: url('Images/Code.jpg'), url('Images/Network.jpg');
     background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 50% auto;
