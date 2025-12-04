@@ -1,0 +1,262 @@
+:root {
+    --background-color-mobile: #e3f2fd;
+    --background-color-tablet: #bbdefb;
+    --background-color-desktop: #90caf9;
+
+    --text-color-mobile: #333;
+    --text-color-tablet: #222;
+    --text-color-desktop: #111;
+    --text-light:#ffffff;
+
+    --accent-color: #1565c0;
+    --accent-hover: #0d47a1;
+    --alert-color: #d32f2f;
+    --alert-hover: #b71c1c;
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+    --font-heading: 'Rubik Moonrocks', cursive;
+}
+
+body {
+    background-color: var(--background-color-mobile);
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color-mobile);
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-hover);
+    border-radius: 5px;
+}
+
+#hero {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 40px;
+    color: var(--text-light);
+    font-family: var(--font-secondary);
+}
+
+a {
+    color: var(--alert-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--alert-hover);
+}
+
+a img {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: var(--font-secondary);
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#resume img {
+    max-width: 300px;
+}
+
+#skills-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+    #skills-images {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+#skills img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--background-color-tablet);
+        color: var(--text-color-tablet);
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 14px 24px;
+    }
+}
+
+/* Desktop Styles*/
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: var(--background-color-desktop);
+        color: var(--text-color-desktop);
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 16px 28px;
+    }
+
+    #skills-images {
+        gap: 20px;
+    }
+
+    #skills img {
+        width: 160px;
+    }
+}
+/* Skills Grid */
+#skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1f8ff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+    color: var(--text-color-desktop);
+    font-family: var(--font-secondary);
+}
+@keyframes spinAndColor {
+    0% {
+        transform: rotate(0deg);
+        color: var(--text-light);
+    }
+    50% {
+        transform: rotate(360deg);
+        color: var(--alert-color);
+    }
+    100% {
+        transform: rotate(0deg);
+        color: var(--text-light);
+    }
+}
+
+.spin-animation {
+    animation: spinAndColor 2s ease-in-out;
+}
+#skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('Images/Code.jpg'), url('Images/Network.jpg');
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% auto, 50% auto;
+    color: #111; /* text color on top of images */
+}
+/* Resize hero image */
+#hero img {
+    width: 100%;         /* fills the width of the hero section */
+    max-height: 700px;   /* caps the height, adjust as needed */
+    object-fit: cover;
+    object-fit: cover;         /* fills area and crops excess */
+    object-position: top;  /* crops the image instead of stretching it */
+    border-radius: 8px;  /* optional, matches your other images */
+    display: block;
+    margin: 20px auto;   /* centers the image */
+}
