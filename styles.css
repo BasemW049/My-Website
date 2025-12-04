@@ -244,7 +244,7 @@ img {
     min-height: 400px;
     padding: 40px 20px;
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/BasemW049/My-Website/refs/heads/main/images/Code.jpg'), url('https://raw.githubusercontent.com/BasemW049/My-Website/refs/heads/main/images/Network.jpg');
+    background-image: url('images/Code.jpg'), url('images/Network.jpg');
     background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 50% auto;
