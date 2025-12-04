@@ -241,14 +241,23 @@ img {
     animation: spinAndColor 2s ease-in-out;
 }
 #skills {
-    min-height: 400px;
+    position: relative;      /* allows absolute positioning of the image */
+    min-height: 400px;       /* adjust so the image shows fully */
     padding: 40px 20px;
     text-align: center;
-    background-color: #f1f8ff;
-    background-image: url('https://raw.githubusercontent.com/BasemW049/My-Website/refs/heads/main/images/Codee.JPG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f1f8ff; /* optional fallback color */
+}
+
+.skills-bg {
+    position: absolute;      /* sit behind content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* fill the section without distortion */
+    z-index: -1;             /* send it behind header and skill boxes */
+}
+
 }
 #hero img {
     width: 100%;
